@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700$display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'nextgig/style.css' %}">
+
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="{% url 'login' %}">Login</a></li>
+                    <li><a href="{% url 'register' %}">Register</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </div>>
+        <div class="row">
+            <div class="col">
+                <h1>Get Your Next Gig!</h1>
+                <form>
+                    <button class="btn" formaction="{% url 'register' %}">REGISTER</button>
+                </form>
+            </div>
+            <div class="col">
+                <h2>Or Hire a SKILL or ITEM</h2>
+                <div class="card card1">
+                    <h5>Developers and IT</h5>
+                    <p>Need information technology skills?</p>
+                </div>
+                
+                <div class="card card2">
+                    <h5>Casual</h5>
+                    <p>Need casual Labor?</p>
+                </div>
+                
+                <div class="card card3">
+                    <h5>Hire Item or Tool</h5>
+                    <p>Need to hire any item or tool?</p>
+                </div>
+                
+                <div class="card card4">
+                    <h5>Tutoring</h5>
+                    <p>Need lessons on any subject?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

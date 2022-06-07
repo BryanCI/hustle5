@@ -1,0 +1,25 @@
+{% extends "nextgig/base.html" %}
+{% block content %}
+    {% for post in posts %}
+       <article class="media content-section">
+           <img class="rounded-circle article-img" src="{{ user.profile.image.url }}">
+           <div class="media-body">
+                <div class="article-metadata">
+                    <h1><a class="mr-2" href="#">{{post.skill}}</a></h1>
+                    <small class="text-muted">{{ post.name}}</small>
+                </div>
+                <h3><a class="article-title" href="#">{{post.category}} {{post.skill_level}}</a></h3>
+                <!--<h2><a class="article-title" href="{% url 'post-detail' post.id %}">HIRE</a></h2>-->
+                <form>
+                    <button class="btn" formaction="{% url 'post-detail' post.id %}">HIRE</button>
+                </form>
+           </div>
+       </article>
+        
+    {% endfor%}
+{% endblock content %}
+
+<!--<h1>{{post.category}}</h1>
+<p>{{post.name}}</p>
+<p>{{post.skill}}</p>
+<p>{{post.skill_level}}</p>-->

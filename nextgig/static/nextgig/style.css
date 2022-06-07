@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(
+        rgba(37, 23, 23, 0.702), rgba(11, 12, 6, 0.702)
+    ), url(work3.jpg); /* put the image url for the background here*/
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    
+}
+
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+
+nav{
+    flex:1;
+    text-align: right;
+
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+
+nav ul li a:hover{
+    background-color: rgb(7, 88, 7);    
+}
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.col{
+    flex-basis: 50%;
+
+}
+
+h1{
+    color: #fff;
+    font-size: 100px;
+    margin-left: 70px;
+}
+
+.btn{
+    width:50%;
+    border-radius: 50px;
+    border: 0;
+    font-size: 40PX;
+    font-weight: 600;
+    margin-top: 50px;
+    margin-left: 100PX;
+    margin-bottom: 40px;
+    padding: 20PX;
+    white-space: nowrap;
+    cursor: pointer;
+    background-color: rgb(8, 185, 37);
+}
+    
+
+.btn:hover{
+    background-color: rgb(126, 250, 10);
+
+}
+
+h2{
+    color: #fff;
+    font-size: 60px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    margin-left: 70px;
+}
+
+h5{
+    color: black;
+    font-size: 30px;
+}
+
+
+p{
+    color: #fff;
+    font-size: 11px;
+    line-height: 15px;
+}
+
+.card{
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-left: 75px;
+    margin-top: 30px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+.card1{
+    background-image: url(it.jpg);
+}
+
+.card2{
+    background-image: url(cleaning.jpg);
+}
+.card3{
+    background-image: url(tools.jpg);
+}
+.card4{
+    background-image: url(tutor.jpg);
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
